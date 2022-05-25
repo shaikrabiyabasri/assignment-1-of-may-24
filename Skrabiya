@@ -1,0 +1,6 @@
+def isPowerOfTwo(self, n):
+		if n==1:
+			return True
+		if n<1:
+			return False
+		return self.isPowerOfTwo(n//2) if n%2==0 else False
